@@ -42,22 +42,26 @@
 	<head>
 		<!meta charset="utf-8">
 		<title> Project: Build a webpage</title>
+		<script src="//code.jquery.com/jquery.min.js"></script>
+
 		<h1>Catrinas Webpage</h1>
 
 	</head>		
 
-		<nav>
-		<a href="https://catrinanowakowski.github.io">Home</a> | 
-		<a href="https://catrinanowakowski.github.io/pages/home_page">pages</a>
-	</nav>
-
+	<div id="nav-placeholder"></div>
+	<script>
+		$.get("/fmt/nav.html", function(data){
+		    $("#nav-placeholder").replaceWith(data);
+		});
+	</script>
 
 	<body>
 		<p>I'm working on this page still, these are the links I am currenlty learning from.<br>
 		https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github <br> https://beautifuljekyll.com/ <br>
 		https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf <br>
 		http://rmarkdown.rstudio.com <br>
-		https://www.w3schools.com/tags/tag_button.asp</p>
+		https://www.w3schools.com/tags/tag_button.asp <br>
+		https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages</p>
 		<img src = "c_fin_col.png" alt = "calanus" width = "200"/>
 		<img src = "ctyp_col.png" alt = "centropages" width = "200"/>
 		<p>These are the copepods I studied during my PhD </p>
