@@ -41,12 +41,17 @@
 
 	<head>
 		<title> Project: Build a webpage</title>
+		<script src="//code.jquery.com/jquery.min.js"></script>
 		<h1>Catrinas Webpage Page Page</h1>
-		<nav>
-			<a href="https://catrinanowakowski.github.io">Home</a> | 
-			<a href="https://catrinanowakowski.github.io/pages/home_page">pages</a>
-		</nav>
+		
 	</head>		
+
+	<div id="nav-placeholder"></div>
+	<script>
+		$.get("/fmt/nav.html", function(data){
+		    $("#nav-placeholder").replaceWith(data);
+		});
+	</script>
 
 	<body>
 		<p>This is a test navigation</p>
