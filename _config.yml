@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: [your repo's top level directory]
+source: [https://catrinanowakowski.github.io]
 incremental: false
 highlighter: rouge
 gist:
@@ -9,3 +9,15 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 theme: jekyll-theme-minimal
+
+
+social-network-links:
+  email: "someone@example.com"
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  github: catrinanowakowski
+ 
+
+
+  share-links-active:
+  github: true
+  email: true
