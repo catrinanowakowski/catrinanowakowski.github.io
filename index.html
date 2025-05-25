@@ -1,57 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-		<style>
-			.button {
-			  border: black;
-			  color: white;
-			  padding: 15px 32px;
-			  text-align: center;
-			  text-decoration: none;
-			  display: inline-block;
-			  font-size: 16px;
-			  margin: 4px 2px;
-			  transition-duration: 0.4s;
-			  cursor: pointer;
-			}
-
-			.button1 {background-color: #04AA6D;} /* Green */
-			.button2 {background-color: #008CBA;} /* Blue */
-
-			.all-browsers {
-			  margin: 0;
-			  padding: 5px;
-			  background-color: lightgray;
-			}
-
-			.all-browsers > h1, .browser {
-			  margin: 10px;
-			  padding: 5px;
-			}
-
-			.browser {
-			  background: white;
-			}
-
-			.browser > h2, p {
-			  margin: 4px;
-			  font-size: 90%;
-			}
-		</style>
-
 	<head>
 		<!meta charset="utf-8">
 		<title> Project: Build a webpage</title>
 		<script src="//code.jquery.com/jquery.min.js"></script>
 
 		<h1>Catrinas Webpage</h1>
-
+		
 	</head>		
 
 	<div id="nav-placeholder"></div>
 	<script>
 		$.get("/fmt/nav.html", function(data){
 		    $("#nav-placeholder").replaceWith(data);
+		});
+	</script>
+
+	<div id="style-placeholder"></div>
+	<script>
+		$.get("/fmt/style.html", function(data){
+		    $("#style-placeholder").replaceWith(data);
 		});
 	</script>
 
