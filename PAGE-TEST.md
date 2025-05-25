@@ -1,6 +1,9 @@
+{% comment %}
 layout: page
 title: "PAGE-TEST"
 permalink: /https://catrinanowakowski.github.io/PAGE-TEST
+
+{% endcomment %}
 <html>
 <body>
 <h1>Hello World</h1>
