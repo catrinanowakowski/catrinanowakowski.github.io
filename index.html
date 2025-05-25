@@ -55,6 +55,10 @@
 
 	</body>
 
-	<?php include '/fmt/footer.php';?>
-
+	<div id="footer-placeholder"></div>
+	<script>
+		$.get("/fmt/footer.html", function(data){
+		    $("#footer-placeholder").replaceWith(data);
+		});
+	</script>
 </html>
