@@ -19,6 +19,26 @@
 
 			.button1 {background-color: #04AA6D;} /* Green */
 			.button2 {background-color: #008CBA;} /* Blue */
+
+			.all-browsers {
+			  margin: 0;
+			  padding: 5px;
+			  background-color: lightgray;
+			}
+
+			.all-browsers > h1, .browser {
+			  margin: 10px;
+			  padding: 5px;
+			}
+
+			.browser {
+			  background: white;
+			}
+
+			.browser > h2, p {
+			  margin: 4px;
+			  font-size: 90%;
+			}
 		</style>
 	</head>		
 	<body>
@@ -34,12 +54,23 @@
 		<img src = "ctyp_col.png" alt = "centropages" width = "200"/>
 		<p>These are the copepods I studied during my PhD </p>
 
-		<a href="https://catrinanowakowski.github.io/PAGE-TEST">
-			<button class="button button1">PAGE-TEST</button>
-		</a>
-		<a href="https://catrinanowakowski.github.io/pages/test">
-			<button class="button button1">R-TEST</button>
-		</a>
+		<article class="all-browsers">
+		  <h1>My testing pages</h1>
+		  <article class="browser">
+		    <h2>HTML page</h2>
+		    <p>This one is prett basic</p>
+		    <a href="https://catrinanowakowski.github.io/PAGE-TEST">
+				<button class="button button1">View</button>
+			</a>
+		  </article>
+		  <article class="browser">
+		    <h2>In R</h2>
+		    <p>Check out the second test page, R-Markdown!.</p>
+		    <a href="https://catrinanowakowski.github.io/pages/test">
+				<button class="button button1">R-TEST</button>
+			</a>
+		  </article>
+		</article>
 
 	</body>
 </html>
