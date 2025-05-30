@@ -1,38 +1,37 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <h1>Catrina's webpage</h1>
+</head>
 <html>
+  <div id="nav-placeholder"></div>
+  <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+  <body><body>
+		<p>Welcome to my webpage! <br>
+			<br>
+		   My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
+		</p>
+		<p><br>
+		   I have a wide range of intersts and experiance, and my goal is to highlight them with this webpage. I am building it from the bottom up in html and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! In addition to learning new coding languages, I am also interested in data visulization, science and art colaborations, as well as the ocean and sustainablity. 
+		</p>
 
-	<head>
-		<!meta charset="utf-8">
-		<title> Project: Build a webpage</title>
-		<script src="//code.jquery.com/jquery.min.js"></script>
 
-		<h1>Catrinas Webpage</h1>
-
-	</head>		
-
-	<div id="nav-placeholder"></div>
-	<script>
-		$.get("/fmt/nav.html", function(data){
-		    $("#nav-placeholder").replaceWith(data);
-		});
-	</script>
-
-	<div id="style-placeholder"></div>
-	<script>
-		$.get("/fmt/style.html", function(data){
-		    $("#style-placeholder").replaceWith(data);
-		});
-	</script>
-
-	<body>
-		<p>I'm working on this page still, these are the links I am currenlty learning from.<br>
-		https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github <br> https://beautifuljekyll.com/ <br>
-		https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf <br>
-		http://rmarkdown.rstudio.com <br>
-		https://www.w3schools.com/tags/tag_button.asp <br>
-		https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages <br> 
-	    https://jinja.palletsprojects.com/en/stable/ <br> 
-		use this one to auto fill a template, I think I need to make a template, and than seperatly write the "body" for every page that way if I change the template, I can regenerate all of the pages with out having to make simple edits across everything. This will happen outside of the repository I think. I should buid a sperate one, and use it to write things, and then send them into this repository to save. </p>
+		
 		<img src = "c_fin_col.png" alt = "calanus" width = "200"/>
 		<img src = "ctyp_col.png" alt = "centropages" width = "200"/>
 		<p>These are the copepods I studied during my PhD </p>
@@ -55,12 +54,12 @@
 		  </article>
 		</article>
 
-	</body>
-
-	<div id="footer-placeholder"></div>
-	<script>
-		$.get("/fmt/footer.html", function(data){
-		    $("#footer-placeholder").replaceWith(data);
-		});
-	</script>
+	</body></body>
+  <div id="footer-placeholder"></div>
+  <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+</html>
 </html>
