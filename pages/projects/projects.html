@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <h1>Catrina's webpage</h1>
+</head>
+<html>
+  <div id="nav-placeholder"></div>
+  <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+  <body><p> This is where I will put my projects that I would like to document! </p></body>
+  <div id="footer-placeholder"></div>
+  <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+</html>
+</html>

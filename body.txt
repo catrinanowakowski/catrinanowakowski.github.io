@@ -1,0 +1,8 @@
+<p>I'm working on this page still, these are the links I am currenlty learning from.<br>
+		https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github <br> https://beautifuljekyll.com/ <br>
+		https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf <br>
+		http://rmarkdown.rstudio.com <br>
+		https://www.w3schools.com/tags/tag_button.asp <br>
+		https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages <br> 
+	    https://jinja.palletsprojects.com/en/stable/ <br> 
+		use this one to auto fill a template, I think I need to make a template, and than seperatly write the "body" for every page that way if I change the template, I can regenerate all of the pages with out having to make simple edits across everything. This will happen outside of the repository I think. I should buid a sperate one, and use it to write things, and then send them into this repository to save. </p>
