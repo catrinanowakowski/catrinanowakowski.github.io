@@ -22,12 +22,22 @@ $.get("/fmt/style.html", function(data){
 });
 </script>
   <body>	<aside>
-		<h2>About Me</h2>
-		<img src = "about_me.jpg" alt = "Me with a fish in a canoe." width = 50%/>
+		<style>
+			div.background {
+ 				  background: url(about_me.jpg) repeat;
+				  border: 2px solid black;
+				  opacity: 0.6;
+				}
+		</style>
 
-		<p> 
-		   My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
-		</p>
+		<div class="background">
+			<h2>About Me</h2>
+		<img src = "about_me.jpg" alt = "Me with a fish in a canoe." width = 50%/>
+			<p> 
+			   My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
+			</p>
+		</div>
+
 	</aside>
 
 	<main>
