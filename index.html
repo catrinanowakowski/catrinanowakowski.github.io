@@ -21,9 +21,9 @@ $.get("/fmt/style.html", function(data){
  $("#style-placeholder").replaceWith(data); 
 });
 </script>
-  <body>	<aside>
+  <body>	<head>
 		<style>
-			div.background {
+			#background {
  				  background-image: url(aside_bg.jpg);
  				  background-repeat: no-repeat;
  				  background-size: contain;
@@ -37,7 +37,11 @@ $.get("/fmt/style.html", function(data){
 				}
 		</style>
 
-		<div class="background">
+	</head>
+
+
+	<aside>
+		<div id="background">
 			<div class="text_aside">
 				<h2>About Me</h2>
 				<p> 
