@@ -23,10 +23,10 @@ $.get("/fmt/style.html", function(data){
 </script>
   <body>	<head>
 		<style>
-			#background {
+			#asidebackground {
  				  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg");
  				  background-repeat: no-repeat;
- 				  background-size: 100% 100%;
+ 				  background-size: contain;
 				  opacity: 0.6;
 				}
 
@@ -35,11 +35,19 @@ $.get("/fmt/style.html", function(data){
 				font-weight: bold;
 				color: #000000;
 				}
+
+			#intrestbackground {
+			  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0967.jpg");
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			  opacity: 0.6;
+			}
+
 		</style>
 	</head>
 
 
-	<aside id="background">
+	<aside id="asidebackground">
 		<div class="text_aside">
 			<h2>About Me</h2>
 			<p> 
@@ -49,14 +57,16 @@ $.get("/fmt/style.html", function(data){
 	</aside>
 
 	<main>
-		<p><br>
-		   I have a wide range of intersts and experiance, and my goal is to highlight them with this webpage. I am building it from the bottom up in html and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! In addition to learning new coding languages, I am also interested in data visulization, science and art colaborations, as well as the ocean and sustainablity. 
-		</p>
-
+		<div id ="intrestbackground">
+			<p><br>
+			   I have a wide range of intersts and experiance, and my goal is to highlight them with this webpage. I am building it from the bottom up in html and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! In addition to learning new coding languages, I am also interested in data visulization, science and art colaborations, as well as the ocean and sustainablity. 
+			</p>
+			<img src = "c_fin_col.png" alt = "calanus" width = "200"/>
+			<img src = "ctyp_col.png" alt = "centropages" width = "200"/>
+			<p>These are the copepods I studied during my PhD </p>
+		</div>
 		
-		<img src = "c_fin_col.png" alt = "calanus" width = "200"/>
-		<img src = "ctyp_col.png" alt = "centropages" width = "200"/>
-		<p>These are the copepods I studied during my PhD </p>
+
 
 		<article class="all-browsers">
 		  <h1>My testing pages</h1>
