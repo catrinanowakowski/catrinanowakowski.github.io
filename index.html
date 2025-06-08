@@ -30,11 +30,7 @@ $.get("/fmt/style.html", function(data){
 
 			.layer {
 			    background-color: rgba(0, 0, 0, 0.1);
-			    position: absolute;
-			    top: 0;
-			    left: 0;
-			    width: 100%;
-			    height: 100%;
+			    background-size: cover
 			}
 
 			div.text_aside p {
@@ -48,7 +44,6 @@ $.get("/fmt/style.html", function(data){
 			  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0967.jpg");
 			  background-repeat: no-repeat;
 			  background-size: 100%;
-			  opacity: 0.6;
 			}
 
 		</style>
@@ -68,6 +63,8 @@ $.get("/fmt/style.html", function(data){
 
 	<main>
 		<div id ="intrestbackground">
+			<div class="layer">
+			</div>
 			<p><br>
 			   I have a wide range of intersts and experiance, and my goal is to highlight them with this webpage. I am building it from the bottom up in html and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! In addition to learning new coding languages, I am also interested in data visulization, science and art colaborations, as well as the ocean and sustainablity. 
 			</p>
