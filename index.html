@@ -40,7 +40,7 @@ $.get("/fmt/style.html", function(data){
 	  			z-index: 1; /* Place the overlay below the text */
 			}
 
-			div.text_aside p {
+			div.text_aside::after p {
 				margin: 5%;
 				font-weight: bold;
 				color: #000000;
@@ -72,6 +72,8 @@ $.get("/fmt/style.html", function(data){
 
 	<aside class="asidebackground">
 		<div class="text_aside">
+			<img src = "about_me.jpg" alt = "photo of me with fish"/>
+
 			<h2>About Me</h2>
 			<p> 
 			   My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
@@ -94,7 +96,7 @@ $.get("/fmt/style.html", function(data){
 		  <h1>My testing pages</h1>
 		  <article class="browser">
 		    <h2>HTML page</h2>
-		    <img src = "c_fin_col.png" alt = "calanus" width = "200"/>
+		    <img src = "c_fin_col.png" alt = "calanus"/>
 		    <p>This one is prett basic</p>
 		    <a href="https://catrinanowakowski.github.io/PAGE-TEST">
 				<button class="button button1">View</button>
