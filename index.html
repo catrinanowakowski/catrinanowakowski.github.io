@@ -30,7 +30,7 @@ $.get("/fmt/style.html", function(data){
  				  z-index: -1;
 				}
 
-			div.asidebackground::before {
+			div.asidebackground {
 				content: ""; /* Necessary for the pseudo-element to be rendered */
 	  			position: absolute;
 	  			top: 0;
@@ -41,7 +41,7 @@ $.get("/fmt/style.html", function(data){
 	  			z-index: 1; /* Place the overlay below the text */
 			}
 
-			div.text_aside::after p {
+			div.text_aside p {
 				font-weight: bold;
 				color: #000000;
 				z-index: 2;
@@ -49,7 +49,7 @@ $.get("/fmt/style.html", function(data){
   	   			width: 75%;
 				}
 
-			div.image_aside::after img{
+			div.image_aside img{
 				float: left; /* Float the image to the left */
   				margin-right: 10px; /* Add some space between the image and text */
   	   		    width: 20%;
