@@ -22,7 +22,7 @@ $.get("/fmt/style.html", function(data){
 </script>
   <body>	<head>
 		<style>
-			div.asidebackground {
+			.asidebackground {
  				  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg");
  				  background-repeat: no-repeat;
  				  background-size: 100%;
@@ -30,7 +30,7 @@ $.get("/fmt/style.html", function(data){
  				  z-index: -1;
 				}
 
-			div.asidebackground::before {
+			.asidebackground::before {
 				content: ""; /* Necessary for the pseudo-element to be rendered */
 	  			position: absolute;
 	  			top: 0;
@@ -79,8 +79,8 @@ $.get("/fmt/style.html", function(data){
 	</head>
 
 
-	<aside>
-		<div class="asidebackground">
+	<aside class="asidebackground">
+		<!div class="asidebackground">
 			<div class="text_aside">
 			<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
 				</p>
@@ -90,7 +90,7 @@ $.get("/fmt/style.html", function(data){
 				
 				<img src = "about_me.jpg" alt = "photo of me with fish"/>
 			</div>
-		</div>
+		<!/div>
 	</aside>
 
 
