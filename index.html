@@ -22,7 +22,7 @@ $.get("/fmt/style.html", function(data){
 </script>
   <body>	<head>
 		<style>
-			.asidebackground {
+			div.asidebackground {
  				  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg");
  				  background-repeat: no-repeat;
  				  background-size: 100%;
@@ -30,7 +30,7 @@ $.get("/fmt/style.html", function(data){
  				  z-index: -1;
 				}
 
-			.asidebackground::before {
+			div.asidebackground::before {
 				content: ""; /* Necessary for the pseudo-element to be rendered */
 	  			position: absolute;
 	  			top: 0;
@@ -48,6 +48,13 @@ $.get("/fmt/style.html", function(data){
 				float: right; /* Float the image to the left */
   	   			width: 75%;
 				}
+
+			div.image_aside::after img{
+				float: left; /* Float the image to the left */
+  				margin-right: 10px; /* Add some space between the image and text */
+  	   		    width: 20%;
+  	    		z-index: 2;
+			}
 
 			div.intrestbackground {
 			  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0967.jpg");
@@ -72,13 +79,17 @@ $.get("/fmt/style.html", function(data){
 	</head>
 
 
-	<aside class="asidebackground">
+	<aside>
+		<div class="asidebackground">
+		</div>
 		<div class="text_aside">
 			<h2>About Me</h2>
 			<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
 			</p>
 		</div>
-		<img src = "about_me.jpg" alt = "photo of me with fish"/>
+		<div class="image_aside">
+			<img src = "about_me.jpg" alt = "photo of me with fish"/>
+		</div>
 	</aside>
 
 	<main>
