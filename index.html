@@ -22,17 +22,21 @@ $.get("/fmt/style.html", function(data){
 </script>
   <body>	<head>
 		<style>
-			#asidebackground {
+			.asidebackground {
  				  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg");
  				  background-repeat: no-repeat;
  				  background-size: 100%;
+ 				  position: relative; /* Position the element to allow the overlay to be positioned relative to it */
 				}
 
-			.layer {
-			    background-color: rgba(0, 0, 0, 0.9);
-			    bottom: 0;
-  				left: 0;
-  				background-size: 100%;
+			.asidebackground::before {
+				content: ""; /* Necessary for the pseudo-element to be rendered */
+	  			position: absolute;
+	  			top: 0;
+	  			left: 0;
+	  			width: 100%;
+	  			height: 100%;
+	  			background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay (adjust color and opacity) */
 	  			z-index: 1; /* Place the overlay below the text */
 			}
 
@@ -55,9 +59,9 @@ $.get("/fmt/style.html", function(data){
 	</head>
 
 
-	<aside id="asidebackground">
-		<div class ="layer">
-		</div>
+	<aside class="asidebackground">
+		<!div class ="layer">
+		<!/div>
 		<div class="text_aside">
 			<h2>About Me</h2>
 			<p> 
