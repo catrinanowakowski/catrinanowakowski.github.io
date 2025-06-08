@@ -27,7 +27,7 @@ $.get("/fmt/style.html", function(data){
  				  background-repeat: no-repeat;
  				  background-size: 100%;
  				  position: relative; /* Position the element to allow the overlay to be positioned relative to it */
- 				  z-index: -1;
+ 				  z-index: 1;
 				}
 
 			.asidebackground::before {
@@ -38,13 +38,13 @@ $.get("/fmt/style.html", function(data){
 	  			width: 100%;
 	  			height: 100%;
 	  			background-color: rgba(225, 225, 225, 0.5); /* Semi-transparent black overlay (adjust color and opacity) */
-	  			z-index: 1; /* Place the overlay below the text */
+	  			z-index: 2; /* Place the overlay below the text */
 			}
 
 			div.text_aside p {
 				font-weight: bold;
 				color: #000000;
-				z-index: 2;
+				z-index: 3;
 				float: right; /* Float the image to the left */
   	   			width: 75%;
 				}
@@ -53,7 +53,7 @@ $.get("/fmt/style.html", function(data){
 				float: left; /* Float the image to the left */
   				margin-left: 10px; /* Add some space between the image and text */
   	   		    width: 20%;
-  	    		z-index: 2;
+  	    		z-index: 3;
 			}
 
 			div.intrestbackground {
@@ -61,7 +61,7 @@ $.get("/fmt/style.html", function(data){
  			  background-repeat: no-repeat;
  			  background-size: 100%;
  			  position: relative; /* Position the element to allow the overlay to be positioned relative to it */
- 			  z-index: -1
+ 			  z-index: 1
 			}
 
 			div.intrestbackground::before {
@@ -72,7 +72,7 @@ $.get("/fmt/style.html", function(data){
 	  			width: 100%;
 	  			height: 100%;
 	  			background-color: rgba(225, 225, 225, 0.5); /* Semi-transparent black overlay (adjust color and opacity) */
-	  			z-index: 1; /* Place the overlay below the text */
+	  			z-index: 2; /* Place the overlay below the text */
 			}
 
 		</style>
