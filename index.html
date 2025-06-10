@@ -69,13 +69,14 @@ $.get("/fmt/style.html", function(data){
 </script>
 </head>
 <html>
-  <div id="nav-placeholder"></div>
-  <script>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
 $.get("/fmt/nav.html", function(data){
  $("#nav-placeholder").replaceWith(data); 
 });
 </script>
-  <body><aside>
+    <aside>
 	<div class="text_aside">
 		<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
 		</p>
@@ -93,12 +94,13 @@ $.get("/fmt/nav.html", function(data){
 		</p>
 		<p>These are the copepods I studied during my PhD </p>
 	</div>		
-</main></body>
-  <div id="footer-placeholder"></div>
-  <script>
+</main>
+    <div id="footer-placeholder"></div>
+    <script>
 $.get("/fmt/footer.html", function(data){
  $("#footer-placeholder").replaceWith(data); 
 });
 </script>
+  </body>
 </html>
 </html>
