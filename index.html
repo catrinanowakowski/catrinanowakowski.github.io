@@ -6,61 +6,27 @@
 
   <title>Project: Build a webpage</title>
   <script src="//code.jquery.com/jquery.min.js"></script>
-  		<style>
-			.asidebackground {
- 				  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg");
- 				  background-repeat: no-repeat;
- 				  background-size: 100%;
- 				  position: relative; /* Position the element to allow the overlay to be positioned relative to it */
- 				  z-index: 1;
-				}
+  	<style>
 
-			.asidebackground::before {
-				content: ""; /* Necessary for the pseudo-element to be rendered */
-	  			position: absolute;
-	  			top: 0;
-	  			left: 0;
-	  			width: 100%;
-	  			height: 100%;
-	  			background-color: rgba(225, 225, 225, 0.5); /* Semi-transparent black overlay (adjust color and opacity) */
-	  			z-index: 2; /* Place the overlay below the text */
-			}
+	    /* Styling for the main content area */
+	    main {
+	      padding: 20px;
+	      display: flex; /* Using flexbox for layout */
+	    }
 
-			div.text_aside p {
-				font-weight: bold;
-				color: #000000;
-				z-index: 3;
-				float: right; /* Float the image to the left */
-  	   			width: 75%;
-				}
+	    /* Styling for the aside (sidebar) */
+	    aside {
+	      background-image: url('https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg'); /* Set the background image */
+	      background-size: cover; /* Make the image cover the entire aside */
+	      background-position: center; /* Center the image within the aside */
+	      background-repeat: no-repeat; /* Prevent the image from repeating */
+	      padding: 15px;
+	      width: 25%; /* Example width for sidebar */
+	      margin-left: 20px; /* Space between main and aside */
+	      color: #fff; /* Example text color for readability against the image */
+	    }
 
-			div.image_aside img{
-				float: left; /* Float the image to the left */
-  				margin-left: 10px; /* Add some space between the image and text */
-  	   		    width: 20%;
-  	    		z-index: 3;
-			}
-
-			.intrestbackground {
-			  background-image: url("https://catrinanowakowski.github.io/photo_bg/IMG_0967.jpg");
- 			  background-repeat: no-repeat;
- 			  background-size: 100%;
- 			  position: relative; /* Position the element to allow the overlay to be positioned relative to it */
- 			  z-index: 1
-			}
-
-			.intrestbackground::before {
-				content: ""; /* Necessary for the pseudo-element to be rendered */
-	  			position: absolute;
-	  			top: 0;
-	  			left: 0;
-	  			width: 100%;
-	  			height: 100%;
-	  			background-color: rgba(225, 225, 225, 0.5); /* Semi-transparent black overlay (adjust color and opacity) */
-	  			z-index: 2; /* Place the overlay below the text */
-			}
-
-		</style>
+	</style>
   <div id="style-placeholder"></div>
   <script>
 $.get("/fmt/style.html", function(data){
@@ -78,18 +44,14 @@ $.get("/fmt/nav.html", function(data){
 </script>
     <main>
 	<aside>
-		<div class="text_aside">
 			<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
 			</p>
-		</div>
 
-		<div class="image_aside">
 			<img src = "about_me.jpg" alt = "photo of me with fish"/>
-		</div>
 	</aside>
 
 
-	<section class="text_aside">
+	<section>
 			<p><br>
 			   I have a wide range of intersts and experiance, and my goal is to highlight them with this webpage. I am building it from the bottom up in html and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! In addition to learning new coding languages, I am also interested in data visulization, science and art colaborations, as well as the ocean and sustainablity. 
 			</p>
