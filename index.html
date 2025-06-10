@@ -61,18 +61,18 @@
 			}
 
 		</style>
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
 </head>
 <html>
   <div id="nav-placeholder"></div>
   <script>
 $.get("/fmt/nav.html", function(data){
  $("#nav-placeholder").replaceWith(data); 
-});
-</script>
-  <div id="style-placeholder"></div>
-  <script>
-$.get("/fmt/style.html", function(data){
- $("#style-placeholder").replaceWith(data); 
 });
 </script>
   <body><aside>
