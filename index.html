@@ -9,7 +9,7 @@
   	<style>
 
 	    /* Styling for the aside (sidebar) */
-	    aside {
+	    .article_bg {
 		  background-image: url('https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg'); /* Set the background image */
 	      background-size: cover; /* Make the image cover the entire aside */
 		  background-position: center; /* Center the image within the aside */
@@ -20,11 +20,49 @@
 	      /* margin-left: 20px; */
 	    }
 
+	    .left_article {
+	    	float: left;
+	    	width: 45%;
+	        margin-right: 15px; /* Add some space to the right of the image */
+	        background-color: lightgray;
+
+	    }
+
+	    .right_article {
+	    	float: right;
+	    	width: 45%;
+	        margin-right: 15px; /* Add some space to the right of the image */
+            background-color: lightgray;
+
+	    }
+
+
+
+	.all-browsers {
+	  margin: 0;
+	  padding: 5px;
+	  background-color: lightgray;
+	}
+
+	.all-browsers > h1, .browser {
+	  margin: 10px;
+	  padding: 5px;
+	}
+
+	.browser {
+	  background: white;
+	}
+
+	.browser > h2, p {
+	  margin: 4px;
+	  font-size: 90%;
+	} 
+
 	    section img {
 	      float: left; /* Float the image to the left */
 	      margin-right: 15px; /* Add some space to the right of the image */
-	      max-width: 150px; /* Limit image width (adjust as needed) */
-	      width: auto; /* Maintain aspect ratio */
+	      max-width: 450px; /* Limit image width (adjust as needed) */
+	      width: 30%; /* Maintain aspect ratio */
 	      height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
 
 	    }
@@ -71,6 +109,28 @@ $.get("/fmt/nav.html", function(data){
 		   I have a wide range of intersts and experiance, and my goal is to highlight them with this webpage. I am building it from the bottom up in html and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! In addition to learning new coding languages, I am also interested in data visulization, science and art colaborations, as well as the ocean and sustainablity. 
 		</p>
 	</section>
+
+	<dev class = "article_bg" >
+		  <article class="left_article">
+		    <h2>The Transition</h2>
+			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/4.CR2", alt = "Sculpture Image" width = "200"/>
+			<p>In 2021__, I was paired with Eunhyung Chung as part of a colaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research.</p>
+		    <a href="https://catrinanowakowski.github.io/pages/projects/the_transition_1">
+				<button class="button button1">View</button>
+			</a>
+		  </article>
+
+		  <article class="right_article">
+		    <h2>The Transition</h2>
+			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/4.CR2", alt = "Sculpture Image" width = "200"/>
+			<p>In 2021__, I was paired with Eunhyung Chung as part of a colaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research.</p>
+		    <a href="https://catrinanowakowski.github.io/pages/projects/the_transition_1">
+				<button class="button button1">View</button>
+			</a>
+		  </article>
+
+
+	</dev>
 
 </main>
     <div id="footer-placeholder"></div>
