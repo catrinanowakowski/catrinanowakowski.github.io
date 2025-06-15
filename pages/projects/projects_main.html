@@ -43,6 +43,19 @@
 	  font-size: 90%;
 	} 
 
+
+	    /* Styling for the aside (sidebar) */
+    .top_bg {
+	  background-image: url('https://catrinanowakowski.github.io/photo_bg/coral.jpg'); /* Set the background image */
+      background-size: cover; /* Make the image cover the entire aside */
+	  background-position: center; /* Center the image within the aside */
+	  background-repeat: no-repeat; /* Prevent the image from repeating */
+	  padding: 0px;      /* Remove width or adjust as needed now that it's below section */
+      /* width: 25%; */
+      /* Remove margin-left if aside is below section */
+      /* margin-left: 20px; */
+    }
+
 </style>
   <div id="style-placeholder"></div>
   <script>
@@ -60,24 +73,36 @@ $.get("/fmt/nav.html", function(data){
 });
 </script>
     <main>
-	<section>
+	<section class = "top_bg">
 		<p> This is the section where I hilight different projects I have worked on over my career! </p>
+		<p> Projects are a wide range of skils, from my PhD thesis working with zooplankton and deep sea coral, to getting a grant in highschool from MIT to build a composting water heater and present it in Boston. Both of my parents are artist, and I grew up helping out in art galleries. </p>
 	</section>
 
 		<article class="all-browsers">
-		  <h1>My testing pages</h1>
+		  <h1>The Transition</h1>
 		  <article class="browser">
 		    <h2>HTML page</h2>
-		    <img src = "c_fin_col.png" alt = "calanus"/>
+		    <img src = "https://catrinanowakowski.github.io/c_fin_col.png" alt = "calanus"/>
 		    <p>This one is prett basic</p>
 		    <a href="https://catrinanowakowski.github.io/PAGE-TEST">
 				<button class="button button1">View</button>
 			</a>
 		  </article>
+
+		<article class="all-browsers">
+		  <h1>My testing pages</h1>
+		  <article class="browser">
+		    <h2>HTML page</h2>
+		    <img src = "https://catrinanowakowski.github.io/c_fin_col.png" alt = "calanus"/>
+		    <p>This one is prett basic</p>
+		    <a href="https://catrinanowakowski.github.io/PAGE-TEST">
+				<button class="button button1">View</button>
+			</a>
+		  </articleS>
 		  <article class="browser">
 		    <h2>In R</h2>
 		    <p>Check out the second test page, R-Markdown!.</p>
-		    <img src = "ctyp_col.png" alt = "centropages" width = "200"/>
+		    <img src = "https://catrinanowakowski.github.io/ctyp_col.png" alt = "centropages" width = "200"/>
 		    <a href="https://catrinanowakowski.github.io/pages/test">
 				<button class="button button1">R-TEST</button>
 			</a>
