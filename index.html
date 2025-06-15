@@ -8,21 +8,21 @@
   <script src="//code.jquery.com/jquery.min.js"></script>
   	<style>
 
-	.button {
-	  border: black;
-	  color: white;
-	  padding: 15px 32px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  margin: 4px 2px;
-	  transition-duration: 0.4s;
-	  cursor: pointer;
-	}
+		.button {
+		  border: black;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.4s;
+		  cursor: pointer;
+		}
 
-	.button1 {background-color: #008CBA;} /* Blue */
-	.button2 {background-color: #008000;} /* Green */
+		.button1 {background-color: #008CBA;} /* Blue */
+		.button2 {background-color: #008000;} /* Green */
 
 	    /* Styling for the aside (sidebar) */
 	    .article_bg {
@@ -31,7 +31,8 @@
 		  background-position: center; /* Center the image within the aside */
 		  background-repeat: no-repeat; /* Prevent the image from repeating */
 		  padding: 0px;      /* Remove width or adjust as needed now that it's below section */
-	      /* width: 25%; */
+	      width: 100%; */
+	      min-height: 300px;
 	      /* Remove margin-left if aside is below section */
 	      /* margin-left: 20px; */
 	    }
@@ -52,28 +53,6 @@
 
 	    }
 
-
-
-	.all-browsers {
-	  margin: 0;
-	  padding: 5px;
-	  background-color: lightgray;
-	}
-
-	.all-browsers > h1, .browser {
-	  margin: 10px;
-	  padding: 5px;
-	}
-
-	.browser {
-	  background: white;
-	}
-
-	.browser > h2, p {
-	  margin: 4px;
-	  font-size: 90%;
-	} 
-
 	    section img {
 	      float: left; /* Float the image to the left */
 	      margin-right: 15px; /* Add some space to the right of the image */
@@ -83,13 +62,13 @@
 
 	    }
 	    /* Styling for the main content area */
-	    section {
+	    .section_bg {
 	      background-image: url('https://catrinanowakowski.github.io/photo_bg/IMG_8941.jpg'); /* Set the background image */
 	      background-size: cover; /* Make the image cover the entire aside */
 	      background-position: center; /* Center the image within the aside */
 	      background-repeat: no-repeat; /* Prevent the image from repeating */
 	      padding: 0px;
-	      min-height: 450px;
+	      min-height: 300px;
 	      width: 100%; /* Example width for sidebar */
 	      /*margin-left: 20px;  Space between main and aside */
 	      color: #fff; /* Example text color for readability against the image */
@@ -115,7 +94,7 @@ $.get("/fmt/nav.html", function(data){
 });
 </script>
     <main>
-	<section>
+	<section class = "section_bg">
 		<img src = "about_me.jpg" alt = "photo of me with fish"/>
 
 		<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
@@ -126,7 +105,7 @@ $.get("/fmt/nav.html", function(data){
 		</p>
 	</section>
 
-	<article class = "article_bg" >
+	<section class = "article_bg" >
 		  <article class="left_article">
 		    <h2>The Transition</h2>
 			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/4.CR2", alt = "Sculpture Image" width = "200"/>
@@ -144,7 +123,7 @@ $.get("/fmt/nav.html", function(data){
 				<button class="button button1">View</button>
 			</a>
 		  </article>
-	</article>
+	</section>
 
 </main>
     <div id="footer-placeholder"></div>
