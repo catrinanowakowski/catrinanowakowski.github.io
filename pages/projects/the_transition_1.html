@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <style>
+	    article img {
+	      float: left; /* Float the image to the left */
+	      margin-right: 15px; /* Add some space to the right of the image */
+	      max-width: 150px; /* Limit image width (adjust as needed) */
+	      width: auto; /* Maintain aspect ratio */
+	      height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
+	    }
+	    
+</style>
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+</head>
+<html>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+    <article>
+<h2> The Transition: 1 </h2>
+
+<p> In 2021__, I was paired with Eunhyung Chung as part of a colaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research. Eun has a master’s degree in Sculpture, and at the time was working on a master’s of Art, __and Education. Together we developed a concept that uses affective, emotional, approaches to visualizing the data from my thesis - changes in zooplankton abundance in the Gulf of Maine.</p>
+
+<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_1.png">
+<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_2.png">
+
+<p> Eun was inspired by the transitions, and we wanted to use transparancy to communicate how one zooplankton was declining in abundance over another. By using a resin, we were able to acomplish this, and through the addtion of color, we could show both the mixing of ocean currents, and the resuting warming of the Gulf of Maine. </p>
+
+<img src="https://catrinanowakowski.github.io/pages/projects/visathon/4.CR2">
+
+<p> The resulting sculpture ___ </p>
+
+<footer>
+<p> <a href="https://naturelab.risd.edu/discover/student-work-the-transition-by-catrina-nowakowski-and-eunhyung-julie-chung/"> View the artilce from RISD here. </a> </p>
+</footer>
+
+</article>
+    <div id="footer-placeholder"></div>
+    <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+  </body>
+</html>
+</html>
