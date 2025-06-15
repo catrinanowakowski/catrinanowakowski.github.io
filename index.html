@@ -8,6 +8,22 @@
   <script src="//code.jquery.com/jquery.min.js"></script>
   	<style>
 
+	.button {
+	  border: black;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	}
+
+	.button1 {background-color: #008CBA;} /* Blue */
+	.button2 {background-color: #008000;} /* Green */
+
 	    /* Styling for the aside (sidebar) */
 	    .article_bg {
 		  background-image: url('https://catrinanowakowski.github.io/photo_bg/IMG_0279.jpg'); /* Set the background image */
@@ -73,6 +89,7 @@
 	      background-position: center; /* Center the image within the aside */
 	      background-repeat: no-repeat; /* Prevent the image from repeating */
 	      padding: 0px;
+	      min-height: 450px;
 	      width: 100%; /* Example width for sidebar */
 	      /*margin-left: 20px;  Space between main and aside */
 	      color: #fff; /* Example text color for readability against the image */
@@ -99,7 +116,6 @@ $.get("/fmt/nav.html", function(data){
 </script>
     <main>
 	<section>
-
 		<img src = "about_me.jpg" alt = "photo of me with fish"/>
 
 		<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. 
@@ -110,7 +126,7 @@ $.get("/fmt/nav.html", function(data){
 		</p>
 	</section>
 
-	<dev class = "article_bg" >
+	<article class = "article_bg" >
 		  <article class="left_article">
 		    <h2>The Transition</h2>
 			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/4.CR2", alt = "Sculpture Image" width = "200"/>
@@ -128,9 +144,7 @@ $.get("/fmt/nav.html", function(data){
 				<button class="button button1">View</button>
 			</a>
 		  </article>
-
-
-	</dev>
+	</article>
 
 </main>
     <div id="footer-placeholder"></div>
