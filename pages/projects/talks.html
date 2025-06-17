@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <style> </style>
+
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+</head>
+<html>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+    <main>
+	<p> EPA HABS, EPA Webinar, AGU, Two division science seminars -- can link to the EPA pages that document these </p>
+
+	<p> my ocean sciences videos, forest fire lecuture, Bay informed talks -- links about bay informed? </p>
+
+	<section>
+		<p> My PhD thesis Defense </p>
+		<img src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/PELAGIC-BENTHIC COUPLING IN THE GULF OF MAINE Title Slide.gif">
+	</section>
+
+	<section>
+		<p> OSM2022 LOREX Talk </p>
+		<img src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/five_min_lorex.jpg">
+
+		<p> OSM2022 Science Talk </p>
+		<img src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/2022-02-08_5min_1_OSM2022.jpg">
+
+	</section>
+
+	<section>
+		<p> Coral Student Seminar at URI GSO </p>
+		<img src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/2022-02-coral_seminar_title_slide.jpg">
+	</section>
+
+</main>
+    <div id="footer-placeholder"></div>
+    <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+  </body>
+</html>
+</html>
