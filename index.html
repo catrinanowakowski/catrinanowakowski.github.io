@@ -6,9 +6,13 @@
 
   <title>Project: Build a webpage</title>
   <script src="//code.jquery.com/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   	<style>
 
-	    section img {
+	    .s1_img {
 	      float: left; /* Float the image to the left */
 	      margin-right: 15px; /* Add some space to the right of the image */
 	      max-width: 450px; /* Limit image width (adjust as needed) */
@@ -16,6 +20,12 @@
 	      height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
 	    }
 
+	    .article_img {
+	      margin-right: 15px; /* Add some space to the right of the image */
+	      max-width: 450px; /* Limit image width (adjust as needed) */
+	      width: 30%; /* Maintain aspect ratio */
+	      height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
+	    }
 
 	    /* Styling for the aside (sidebar) */
 	    .article_bg {
@@ -24,30 +34,12 @@
 		  background-position: center; /* Center the image within the aside */
 		  background-repeat: no-repeat; /* Prevent the image from repeating */
 		  padding: 0px;      /* Remove width or adjust as needed now that it's below section */
+		  margin: 2px;
 	      width: 100%; */
 	      min-height: 300px;
 	      /* Remove margin-left if aside is below section */
 	      /* margin-left: 20px; */
 	    }
-
-	    .left_article {
-	    	float: left;
-	    	width: 47%;
-	        margin-left: 1.5%; /* Add some space to the right of the image */
-	        margin-right: 1.5%; /* Add some space to the right of the image */
-	        background-color: lightgray;
-
-	    }
-
-	    .right_article {
-	    	float: right;
-	    	width: 47%;
-	        margin-right: 1.5%; /* Add some space to the right of the image */
-	        margin-left: 1.5%; /* Add some space to the right of the image */
-            background-color: lightgray;
-
-	    }
-
 
 	    /* Styling for the main content area */
 	    .section_bg {
@@ -57,6 +49,7 @@
 	      background-repeat: no-repeat; /* Prevent the image from repeating */
 	      padding: 0px;
 	      min-height: 300px;
+	      margin: 2px;
 	      width: 100%; /* Example width for sidebar */
 	      /*margin-left: 20px;  Space between main and aside */
 	      color: #fff; /* Example text color for readability against the image */
@@ -82,8 +75,9 @@ $.get("/fmt/nav.html", function(data){
 });
 </script>
     <main>
+	<div class = "row">
 	<section class = "section_bg">
-		<img src = "about_me.jpg" alt = "photo of me with fish"/>
+		<img class = "s1_img" src = "about_me.jpg" alt = "photo of me with fish"/>
 
 		<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. I have a wide range of intersts and experiance, and my goal is to build a portfolio using this website. Topics I plan to hilght are data visulization, science and art colaborations, as well as the ocean and making large scale ecosystem connections. 
 		</p>
@@ -98,27 +92,54 @@ $.get("/fmt/nav.html", function(data){
 			<button class="button button1">See website complier here!</button>
 		</a>
 	</section>
+	</div>
+
 
 	<section class = "article_bg" >
+		<div class="row">
 		<p> Check out these Articles! </p>
-		  <section class="left_article">
+
+		<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <article class="browser">
 		    <h2>The Transition</h2>
-			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg", alt = "Sculpture Image" width = "200"/>
+			<img class = "article_img" src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg", alt = "Sculpture Image"/>
 			<p>In 2021__, I was paired with Eunhyung Chung as part of a colaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research.</p>
 		    <a href="https://catrinanowakowski.github.io/pages/projects/the_transition_1">
 				<button class="button button1">View</button>
 			</a>
-		  </section>
+		  </article>
+		</article>
+		</div>
 
-		  <section class="right_article">
+		<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <article class="browser">
 		    <h2>EcoMon Cruise</h2>
-		    <img src = "https://catrinanowakowski.github.io/c_fin_col.png" alt = "calanus" width = "200"/>
+		    <img class = "article_img" src = "https://catrinanowakowski.github.io/c_fin_col.png" alt = "calanus" width = "200"/>
 		    <p>In 202__ I went on the NOAA EcoMon Spring Cruise! </p>
 		    <a href="https://catrinanowakowski.github.io/pages/programming/EcoMON_Cruise">
 				<button class="button button1">View</button>
 			</a>
-		  </section>
+		  </article>
+		</article>
+		</div>
 
+		<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <h1>Posters</h1>
+			  <article class="browser">
+			    <h2>check out my posters </h2>
+			    <img class = "article_img" src = "https://catrinanowakowski.github.io/pages/projects/posters/COE Summit18_nowakowski.jpg" alt = "calanus" width = "200"/>
+			    <p>These show case my time modeling HABs, Hurricanes, and Zooplankton!</p>
+			    <a href="https://catrinanowakowski.github.io/pages/projects/conferance_posters">
+					<button class="button button1">Posters!</button>
+				</a>
+			  </article>
+		  </article>
+	</div>
+
+		 </div>
 		 <p> Explore the other pages to find more! </p>
 	</section>
 
