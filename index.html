@@ -12,14 +12,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   	<style>
 
-	    .s1_img {
-	      float: left; /* Float the image to the left */
-	      margin-right: 15px; /* Add some space to the right of the image */
-	      max-width: 450px; /* Limit image width (adjust as needed) */
-	      width: 30%; /* Maintain aspect ratio */
-	      height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
-	    }
-
+		.s1_img {
+		  float: left; /* Float the image to the left */
+		    margin-right: 15px; /* Add some space to the right of the image */
+		    max-width: 450px; /* Limit image width (adjust as needed) */
+		    width: 30%; /* Maintain aspect ratio */
+		    height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
+		}
 	    .article_img {
 	      margin-right: 15px; /* Add some space to the right of the image */
 	      max-width: 450px; /* Limit image width (adjust as needed) */
@@ -77,14 +76,19 @@ $.get("/fmt/nav.html", function(data){
     <main>
 	<div class = "row">
 	<section class = "section_bg">
+		<div class = "col-sm-4">
 		<img class = "s1_img" src = "about_me.jpg" alt = "photo of me with fish"/>
+		</div>
 
+		<div class = "col-sm-8">
 		<p>My name is Catherine, but I go by Catrina and I am an Earth Systems Researcher. Currently I am and ORISE Postdoc with the US. EPA working on the National Aquatic Resources Survey to look at nitrogen processing in the nations wetlands. I have a Ph.D. in Oceanography from the University of Rhode Island, and a Bacholors in Environmental Engineering from the University of Connecticut. I have a wide range of intersts and experiance, and my goal is to build a portfolio using this website. Topics I plan to hilght are data visulization, science and art colaborations, as well as the ocean and making large scale ecosystem connections. 
 		</p>
 
 		<p><br>
 		    I am building this website from the bottom up in html and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! Check out these links to see the code behind the sceens in my GitHub repositories. Currently many of the pages still need spell checking and I am learning how to format things for multiple screens. One of my goals is to learn how to use D3 on the web, most of my prior visulazations have been made in MatLab, R, and Python. Currently working on localy building the page: open bash from the folder with my website, run py -m http.server  go to http://localhost:8000/index.html
 		</p>
+		</div>
+
 		<a href="https://catrinanowakowski.github.io/pages/projects/the_transition_1">
 			<button class="button button1">See website code here!</button>
 		</a>
