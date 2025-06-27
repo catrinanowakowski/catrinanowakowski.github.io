@@ -6,6 +6,10 @@
 
   <title>Project: Build a webpage</title>
   <script src="//code.jquery.com/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
 	    article img {
 	      float: left; /* Float the image to the left */
@@ -34,26 +38,33 @@ $.get("/fmt/nav.html", function(data){
     <article>
 <h2> The Transition: 1 </h2>
 
-<section>
-<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_1.png">
-<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_2.png">
+	<div class = "row">
+		<div class = "col-sm-6">
+			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_1.png">
+		</div>
+		<div class = "col-sm-6">
+			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_2.png">
+		</div>
+	</div>
 
-<p> In 2021__, I was paired with Eunhyung Chung as part of a colaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research. Eun has a master’s degree in Sculpture, and at the time was working on a master’s of Art, __and Education. Together we developed a concept that uses affective, emotional, approaches to visualizing the data from my thesis - changes in zooplankton abundance in the Gulf of Maine.</p>
+<div class = "row">
+	<p> In 2021__, I was paired with Eunhyung Chung as part of a collaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research. Eun has a master’s degree in Sculpture, and at the time was working on a master’s of Art, __and Education. Together we developed a concept that uses affective, emotional, approaches to visualizing the data from my thesis - changes in Zooplankton abundance in the Gulf of Maine.</p>
+</div>
 
-</section>
+<div = class = "row">
+	<div class = "col-sm-4">
+		<img src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg">
+	</div>
+	<div class = "col-sm-8">
+		<p> Eun was inspired by the transitions, and we wanted to use transparency to communicate how one Zooplankton was declining in abundance over another. By using a resin, we were able to accomplish this, and through the addition of color, we could show both the mixing of ocean currents, and the resulting warming of the Gulf of Maine. </p>
+	</div>
+</div>
 
-<section>
-	<p> Eun was inspired by the transitions, and we wanted to use transparancy to communicate how one zooplankton was declining in abundance over another. By using a resin, we were able to acomplish this, and through the addtion of color, we could show both the mixing of ocean currents, and the resuting warming of the Gulf of Maine. </p>
-
-<img src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg">
-</section>
-
-<section>
+<div class = "row">
 	<p> The resulting sculpture ___ </p>
 
-<p> <a href="https://naturelab.risd.edu/discover/student-work-the-transition-by-catrina-nowakowski-and-eunhyung-julie-chung/"> View the artilce from RISD here. </a> </p>
-
-</section>
+<p> <a href="https://naturelab.risd.edu/discover/student-work-the-transition-by-catrina-nowakowski-and-eunhyung-julie-chung/"> View the article from RISD here. </a> </p>
+</div>
 
 </article>
     <div id="footer-placeholder"></div>
