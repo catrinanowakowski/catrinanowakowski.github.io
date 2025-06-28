@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+        .imgbox {
+            display: grid;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 80vh;
+            margin: auto;
+        }
+</style>
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+</head>
+<html>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+    <main>
+	<p> EPA HABS, EPA Webinar, AGU, Two division science seminars -- can link to the EPA pages that document these </p>
+
+	<p> my ocean sciences videos, forest fire lecture, Bay informed talks -- links about bay informed? </p>
+
+	<section>
+		<p> My PhD thesis Defense </p>
+		<div class="imgbox">
+    		<img class="center-fit" src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/PELAGIC-BENTHIC COUPLING IN THE GULF OF MAINE Title Slide.gif">
+    	</div>
+	</section>
+
+	<section>
+		<p> OSM2022 LOREX Talk </p>
+		<div class="imgbox">
+    		<img class="center-fit" src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/five_min_lorex.jpg">
+    	</div>
+		<p> OSM2022 Science Talk </p>
+		<div class="imgbox">
+    		<img class="center-fit" src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/2022-02-08_5min_1_OSM2022.jpg">
+    	</div>
+	</section>
+
+	<section>
+		<p> Coral Student Seminar at URI GSO </p>
+
+		<div class="imgbox">
+    		<img class="center-fit" src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/coral_seminar_title_slide.jpg">
+    	</div>
+	</section>
+
+</main>
+    <div id="footer-placeholder"></div>
+    <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+  </body>
+</html>
+</html>

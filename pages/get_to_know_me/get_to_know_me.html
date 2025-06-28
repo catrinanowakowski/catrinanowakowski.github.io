@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+	    /* Styling for the aside (sidebar) */
+    .top_bg {
+	  background-image: url('https://catrinanowakowski.github.io/photo_bg/coral.jpg'); /* Set the background image */
+      background-size: cover; /* Make the image cover the entire aside */
+	  background-position: center; /* Center the image within the aside */
+	  background-repeat: no-repeat; /* Prevent the image from repeating */
+	  padding: 0px;      /* Remove width or adjust as needed now that it's below section */
+      /* width: 25%; */
+      /* Remove margin-left if aside is below section */
+      /* margin-left: 20px; */
+    }
+
+</style>
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+</head>
+<html>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+    <main>
+	<section class = "top_bg">
+		<p>Explore some of my philosaphys when it comes to my research career, more about my pathway, and what I like to do outside of work!  </p>
+	</section>
+
+<section class = "top_bg">
+<div class = "row">
+	<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <h1>Attending a Vocational High School </h1>
+			  <article class="browser">
+			    <h2>HTML page</h2>
+				<img src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg", alt = "Sculpture Image" width = "200"/>
+				<p>I went to a ____</p>
+			    <a href="https://catrinanowakowski.github.io/pages/projects/the_transition_1">
+					<button class="button button1">View</button>
+				</a>
+			  </article>
+		</article>
+	</div>
+	<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <h1>Undergraduate Degree</h1>
+			  <article class="browser">
+			    <h2>Environmental Engineering</h2>
+				<img src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg", alt = "Sculpture Image" width = "200"/>
+				<p>ENVE</p>
+			    <a href="https://catrinanowakowski.github.io/pages/projects/the_transition_2">
+					<button class="button button1">View</button>
+				</a>
+			  </article>
+		</article>
+	</div>
+
+	<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <h1>PhD</h1>
+			  <article class="browser">
+			    <h2>University of Rhode Island </h2>
+			    <img src = "https://catrinanowakowski.github.io/pages/projects/posters/COE Summit18_nowakowski.jpg" alt = "calanus" width = "200"/>
+			    <p>Food webs and Climate! </p>
+			    <a href="https://catrinanowakowski.github.io/pages/projects/conferance_posters">
+					<button class="button button1">Posters!</button>
+				</a>
+			  </article>
+		  </article>
+	</div>
+</div>
+
+<div class = "row">
+	<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <h1>Talks</h1>
+			  <article class="browser">
+			    <h2>Seminars and Talks</h2>
+			    <p>A page about the talks I have given in grad school and my postdoc with the US EPA. </p>
+			    <img src = "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/2022-02-08_5min_1_OSM2022.jpg" alt = "centropages" width = "200"/>
+			    <a href="https://catrinanowakowski.github.io/pages/projects/talks">
+					<button class="button button1">Talks!</button>
+				</a>
+			  </article>
+		</article>
+	</div>
+</div>
+
+</section>
+
+</main>
+    <div id="footer-placeholder"></div>
+    <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+  </body>
+</html>
+</html>

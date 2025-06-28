@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+	    /* Styling for the aside (sidebar) */
+    .top_bg {
+	  background-image: url('https://catrinanowakowski.github.io/photo_bg/coral.jpg'); /* Set the background image */
+      background-size: cover; /* Make the image cover the entire aside */
+	  background-position: center; /* Center the image within the aside */
+	  background-repeat: no-repeat; /* Prevent the image from repeating */
+	  padding: 0px;      /* Remove width or adjust as needed now that it's below section */
+      /* width: 25%; */
+      /* Remove margin-left if aside is below section */
+      /* margin-left: 20px; */
+    }
+
+</style>
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+</head>
+<html>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+    <main>
+	<section class = "top_bg">
+		<p> This is going to be a page about my programming experience. I have been programming since I started my freshman year of college. The first language I learned was MatLab!</p>
+	</section>
+
+	<div class = "row">
+		<section class = "top_bg">
+			
+		<div class = "col-sm-4">
+		<article class="all-browsers">
+		  <h1>EcoMon Cruise</h1>
+		  <article class="browser">
+		    <h2>D3 Visualization</h2>
+		    <img src = "https://catrinanowakowski.github.io/c_fin_col.png" alt = "calanus" width = "200"/>
+		    <p>In 202__ I went on the NOAA EcoMon Spring Cruise! </p>
+		    <a href="https://catrinanowakowski.github.io/pages/programming/EcoMON_Cruise">
+				<button class="button button1">View</button>
+			</a>
+		  </article>
+		  
+		</article>
+		</div>
+
+	</section>
+	</div>
+
+
+</main>
+    <div id="footer-placeholder"></div>
+    <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+  </body>
+</html>
+</html>
