@@ -11,13 +11,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-	    article img {
-	      float: left; /* Float the image to the left */
-	      margin-right: 15px; /* Add some space to the right of the image */
-	      max-width: 150px; /* Limit image width (adjust as needed) */
-	      width: 20%; /* Maintain aspect ratio */
-	      height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
-	    }
+	     .custom-image {
+            max-height: 250px; /* Set a maximum height for the image */
+            height: auto;      /* Maintain aspect ratio */
+            object-fit: contain; /* Control how the image fits its container */
+        }
+
+        .custom-image-md {
+            max-height: 150px; /* Set a maximum height for the image */
+            height: auto;      /* Maintain aspect ratio */
+            object-fit: contain; /* Control how the image fits its container */
+        }
 
 </style>
   <div id="style-placeholder"></div>
@@ -36,36 +40,38 @@ $.get("/fmt/nav.html", function(data){
 });
 </script>
     <article>
+<div class="container m-3"> <!-- Adds a margin around the whole container -->
+
 <h2> The Transition: 1 </h2>
 
+<div class = "row">
+
+	<div class = "col-md-4">
+		<img src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg", class="img-fluid custom-image">
+	</div>
+
+	<div class = "col-md-8">
+	<p> In 2021 I was paired with Eunhyung Chung as part of a collaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research. Eun has a master’s degree in Sculpture, and at the time was working on a master’s of Teaching + Learning in Art + Design. Together we developed a concept that uses affective, emotional, approaches to visualizing the data from my thesis - changes in Zooplankton abundance in the Gulf of Maine. See the images below for some examples of what I shared with her early on!</p>
+	
+	<div class="container m-3"> <!-- Adds a margin around the whole container -->
 	<div class = "row">
-		<div class = "col-sm-6">
-			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_1.png">
+		<div class = "col-md-3">
+			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_1.png", class="img-fluid custom-image-md me-3">
 		</div>
-		<div class = "col-sm-6">
-			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_2.png">
+
+		<div class = "col-md-3">
+			<img src="https://catrinanowakowski.github.io/pages/projects/visathon/data_example_2.png", class="img-fluid custom-image-md ms-3">
 		</div>
 	</div>
+    </div>
 
-<div class = "row">
-	<p> In 2021__, I was paired with Eunhyung Chung as part of a collaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research. Eun has a master’s degree in Sculpture, and at the time was working on a master’s of Art, __and Education. Together we developed a concept that uses affective, emotional, approaches to visualizing the data from my thesis - changes in Zooplankton abundance in the Gulf of Maine.</p>
+	<p> Eun was inspired by the transitions, and we wanted to use transparency to communicate how one Zooplankton was declining in abundance over another. By using a resin, we were able to accomplish this, and through the addition of color, we could show both the mixing of ocean currents, and the resulting warming of the Gulf of Maine. </p>
+
+	<p> <a href="https://naturelab.risd.edu/discover/student-work-the-transition-by-catrina-nowakowski-and-eunhyung-julie-chung/"> View the article from RISD here. </a> </p>
+</div>
 </div>
 
-<div = class = "row">
-	<div class = "col-sm-4">
-		<img src="https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg">
-	</div>
-	<div class = "col-sm-8">
-		<p> Eun was inspired by the transitions, and we wanted to use transparency to communicate how one Zooplankton was declining in abundance over another. By using a resin, we were able to accomplish this, and through the addition of color, we could show both the mixing of ocean currents, and the resulting warming of the Gulf of Maine. </p>
-	</div>
 </div>
-
-<div class = "row">
-	<p> The resulting sculpture ___ </p>
-
-<p> <a href="https://naturelab.risd.edu/discover/student-work-the-transition-by-catrina-nowakowski-and-eunhyung-julie-chung/"> View the article from RISD here. </a> </p>
-</div>
-
 </article>
     <div id="footer-placeholder"></div>
     <script>
