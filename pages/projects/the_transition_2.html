@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
 	     .custom-image {
-            max-height: 250px; /* Set a maximum height for the image */
+            max-height: 400px; /* Set a maximum height for the image */
             height: auto;      /* Maintain aspect ratio */
             object-fit: contain; /* Control how the image fits its container */
         }
@@ -39,11 +39,28 @@ $.get("/fmt/nav.html", function(data){
  $("#nav-placeholder").replaceWith(data); 
 });
 </script>
-    <main>
-	<p> We applied for a scholarship to do it again, but bigger... </p>
+    <article>
+<div class="container m-3"> <!-- Adds a margin around the whole container -->
 
-	<p> can I link to Eun's instagram posts? </p>
-</main>
+  <h2> The Transition: 2 </h2>
+
+  <div class = "row align-items-center">
+    <div class = "col-md-12">
+      <img src="https://catrinanowakowski.github.io/pages/projects/visathon/summary.png", class="img-fluid custom-image">
+    </div>
+
+  </div>
+
+    <div class = "row align-items-center">
+    <div class = "col-md-12">
+      <img src="https://catrinanowakowski.github.io/pages/projects/visathon/layout.png", class="img-fluid custom-image">
+    </div>
+
+  </div>
+
+
+</div>
+</article>
     <div id="footer-placeholder"></div>
     <script>
 $.get("/fmt/footer.html", function(data){
