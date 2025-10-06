@@ -46,26 +46,79 @@ $.get("/fmt/nav.html", function(data){
 
 		<h3>UNDER CONSTRUCTION</h3>
 		<h2> How I built this </h2>
-		 <h4> Building a website wasn't about just digitalizing my CV for me, but it also has been a cool benefit to get a chance to look back and display my posters that took a lot of time for past me to make. My goal was to learn a new skill. With the current administration, and my background in oceans and climate, it feels like one of the few things that I do have control over in my current career path. </h4>
+		 <h4> Building a website hasn't been just about digitalizing my CV, but this has been an interesting benefit. It has enabled me to look back on work I have done in the past, and ask my self how do I give these projects a new home. When I started building my website, my goal was to learn a new skill. With the current administration, and my background in oceans, climate and now wetlands, it feels like one of the few things that I do have control over in my current career path. </h4>
 
-		 <h4>When I picture the job I have in the future, I am making things for all kinds of different people, from detailed derivatizations for other scientist, to something that is going to be accessible to wider audiences. To me, this felt like I should start learn how to build some of the backbone to displaying web elements. So now, I am building myself my own little platform where I can experiment and learn. And if someone else happens to be interested in it, that's great too!
+		 <h4>When I picture the job I have in the future, I am making things for all kinds of different people, from detailed derivatizations for other scientist, to something that is going to be accessible to my parents and family. A skill set both of these groups share is navigating the Internet and digital content. Knowing that I can meet my audiences needs this way, I felt like I had a direction to start in: learning both some front and back end components to displaying web elements. Now, I am building myself my own personal platform where I can experiment and learn, and this thread is intended to document my process.
 		 </h4>
 
 		 <h3>How I framed this project</h3>
-		 <h4>When I start a project, one of the first things I consider is how many times am I going to have to perform a function, or need this feature. Usually, I then start to construct a function, and I make it as MODULAR as I can. </h4>
-		 <h4>But what was interesting with this project, is that my goal was different from what I usually do. Usually, I am constructing an analysis or data visulization, where I pass data in, and get either slightly different data or a graphical component out. For this project, I am making a multiple static pages for another human to navigate, but also a file structure and map that I need to be able to scale and mold as my needs and know how grow. </h4>
+		 <h4>When I start a project, one of the first things I consider is how many times am I going to have to perform a task or need a specific feature. This helps me start to outline and constructing modular functions and to identify what variables are the most important. </h4>
+
+		 <h4>With this project, I quickly realized that my goal is different from what I usually do. Normally, I construct an analysis or data visualization. Data goes in to a function and what comes out is  either slightly different data or a graphical component. For this project, I am designing a series of file paths for another human to navigate, and this map of connections needs to scale and grow as my needs and know how evolve. </h4>
 
 		 <h3>First things first - pick something overly complicated for your index page. </h3>
-		 <h4>I need a navigation pane, and two photos of the ocean that stretch my index.html page that make two fancy looking sections because I cannot just start with a simple background apparently. While, this lead to me breaking my page multiple times early on, it was useful to start with a challenging task (that I still havn't mastered, one photo is wider still just slightly wider than the other as I am writing this), because it meant I had to overcome a few barriers early before I had fleshed out my page infrastructure. </h4>
+		 <h4>The home page of your website is your "Index.html" file. And I decided immediately that I needed a navigation pane, and two photos of the ocean that stretch across the full page that make two distinct sections. While, this lead to me breaking my page multiple times early on, it was useful to start with a challenging task (that I still haven't fully mastered), because it meant I had to overcome a few barriers early before I had fully committed to a design and  infrastructure. </h4>
 
-		 <h4>On a more useful note, I realized immediately, that I was not interested in copy and pasting the code for my navigation pane and footer for every static HTML file, and I needed a standardized way to do this. I found a solution that looks something like this: </h4>
+		 <h4>In attempting to make an *ascetic* home pate, I realized immediately, that I was not interested in copy and pasting the code for my navigation pane and footer for every static HTML file, and I needed a standardized way to do this. I found a solution that looks something like this: </h4>
+
+		 <h5> 
+		 	Simplification of the build_page() function (10/05/2025)
+
+		 	HTML
+		 		head (not the same as header)
+		 			title
+		 			script
+		 			bootstrap
+		 			style
+		 		head
+
+		 		body
+		 			navigation
+		 			body
+		 			footer 
+		 		body
+		 	HTML
+
+		 </h5>
+		<h4>
+			What if I want to add a new navigation option, or change the footer one day, and I don't want to re render each static page? 
+
+			I save a nav.html file, and a footer.html file, and use "//code.jquery.com/jquery.min.js" to call the same file each time the page is rendered in your browser. This means, every time any page is loaded, it is getting the navigation and footer information from the same source. 
+		</h4>
 
 		 <h4>I was skeptical about calling java script, but it seems like it is saved somewhere in the browser and will work, and as I look at other pages code (F12) I can see that this is standard practice. </h4>
 
-		 <h4>Ok, great, I only change my navigation pane in one place, instead of many, and it always updates even if I forget a page. </h4>
 
-		 <h3>Talk to your friends, espically the ones that actually study programing for a living, they know how to do things the easier way. </h3>
+		<h4>
+			This means I only have to make a style file, and body file for each page. Then when I compile the final html file in R, they get sandwiched into the standard outline. 
+		</h4>
 
+		<h5> 
+		 	Simplification of the build_page() function (10/05/2025)
+		 	Only style and body need to be created for each page
+
+		 	HTML
+		 		head (not the same as header)
+		 			title
+		 			script
+		 			bootstrap
+		 			style
+		 		head
+
+		 		body
+		 			navigation
+		 			body
+		 			footer 
+		 		body
+		 	HTML
+
+		 </h5>
+
+
+
+	<h3> Next topic: Scaling objects on the page
+	 </h3>
+	
 		 <h4>I first started trying to scale everything DIY, that is hard, and while it was good for me getting to know HTML syntax, it is not what I currently do now. Bootstrap does a lot of the work for you, and makes it work across different screen types as well. And while I know it was possible to build my site locally, it really helped to be shown how to do it </h4>
 
 		 <h4>
