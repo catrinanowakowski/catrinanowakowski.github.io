@@ -1,0 +1,26 @@
+[
+    {
+        "title": "The Transition",
+        "subtitle": "The Transition: 1",
+        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg",
+        "altText": "Sculpture Image",
+        "description": "In 2021, I was paired with Eunhyung Chung as part of a collaboration between the Rhode Island School of Design (RISD) and the University of Rhode Island (URI) to develop an art piece inspired by my Ph.D. research.",
+        "link": "https://catrinanowakowski.github.io/pages/projects/the_transition_1"
+    },
+    {
+        "title": "How I built this",
+        "subtitle": "Why I built this",
+        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg",
+        "altText": "Another Project Image",
+        "description": "Building a website hasn't been just about digitalizing my CV, but this has been an interesting benefit.",
+        "link": "https://catrinanowakowski.github.io/pages/programing/how_i_built"
+    },
+    {
+        "title": "Science Presentations",
+        "subtitle": "Posters",
+        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/posters/COE Summit18_nowakowski.jpg",
+        "altText": "Hurricane Modeling Poster",
+        "description": "These are posters I have presented at science conferences.",
+        "link": "https://catrinanowakowski.github.io/pages/projects/conferance_posters"
+    }
+]
