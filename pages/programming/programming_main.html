@@ -11,7 +11,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-
+    .article_img {
+        margin-right: 15px; /* Add some space to the right of the image */
+        max-width: 450px; /* Limit image width (adjust as needed) */
+        width: 30%; /* Maintain aspect ratio */
+        height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
+      }
+      
 	    /* Styling for the aside (sidebar) */
     .top_bg {
 	  background-image: url('https://catrinanowakowski.github.io/photo_bg/coral.jpg'); /* Set the background image */
@@ -46,11 +52,6 @@ $.get("/fmt/nav.html", function(data){
 });
 </script>
     <main>
-	<!--section class = "top_bg">
-		<p> This is going to be a page about my programming experience. I have been programming since I started my freshman year of college. The first language I learned was MatLab!</p>
-	</section-->
-
-
 
 <div class="container-fluid"> 
 	<section class = "top_bg" >
@@ -63,15 +64,10 @@ $.get("/fmt/nav.html", function(data){
 			</div>
 		</div>
 
-
-
 	</div>
 	</section>
 
 </div>
-
-
-
 
 <script src="./pages/programming/article_card.js"></script>
 
