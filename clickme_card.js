@@ -3,11 +3,12 @@ $(document).ready(function() {
         const container = $('#clickme-cards-container');
         
         $.each(clickmes, function(index, clickme) {
-            const cardHtml = `
-            <div class="col-md-4 mb-4"> <article class="all-browsers">
+            const clickmecardHtml = `
+            <div class="col-md-4 mb-4"> 
+            <article class="all-browsers">
                     <h1>${clickme.title}</h1>
                     <article class="browser">
-                        <a href="${clickme.link}">
+                        <a href="${clickme.link}" target="_blank">
                             <button class="btn btn-primary button1">View</button>
                         </a>
                     </article>
@@ -15,7 +16,7 @@ $(document).ready(function() {
             </div>
         `;
         
-            container.append(cardHtml);
+            container.append(clickmecardHtml);
         });
     });
 });
