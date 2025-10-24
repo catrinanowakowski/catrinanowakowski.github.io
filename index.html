@@ -98,18 +98,19 @@ $.get("/fmt/nav.html", function(data){
 						    I am building this website from the bottom up in HTML and javaScript using GitHub Pages. To keep the design modular, I wrote a simple complier using the package "htmltools" in R! Check out these links to see the code behind the scenes in my GitHub repositories. Currently many of the pages still need spell checking and I am learning how to format things for multiple screens. One of my goals is to learn how to use D3 on the web, most of my prior visualizations have been made in MatLab, R, and Python. Currently working on locally building the page: open bash from the folder with my website, run py -m http.server  go to http://localhost:8000/index.html
 						</h4>
 					</div>
+
 					<div class = "row">
-						<div class = "col-md-3">
-							<a href="https://github.com/catrinanowakowski/catrinanowakowski.github.io">
-								<button class="button button1">See website code here!</button>
-							</a>
-						</div>
-						<div class = "col-md-3">
-							<a href="https://github.com/catrinanowakowski/webpage_generator">
-								<button class="button button1">See website complier here!</button>
-							</a>
+						<div class="container m-1"> <!-- Adds a margin around the whole container -->
+
+							<div class="row">
+								<div class="container mt-5">
+					    			<div class="row" id="clickme-cards-container">
+					        		</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
 
 					</div>
 				</div>
@@ -117,6 +118,8 @@ $.get("/fmt/nav.html", function(data){
 		</section>
 	</div>
 </div>
+
+
 
 <div class="container-fluid"> 
 	<section class = "article_bg" >
@@ -136,7 +139,8 @@ $.get("/fmt/nav.html", function(data){
 
 </div>
 
-	<script src="./article_card.js"></script>
+<script src="./clickme_card.js"></script>
+<script src="./article_card.js"></script>
 
 
 </main>
