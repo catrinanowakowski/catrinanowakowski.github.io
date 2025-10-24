@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON('./pages/programming/articles.json', function(articles) {
+    $.getJSON('https://catrinanowakowski.github.io/pages/programming/articles.json', function(articles) {
         const container = $('#article-cards-container');
         
         $.each(articles, function(index, article) {
