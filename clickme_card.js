@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON('./clickmes.json', function(clickmes) {
+    $.getJSON('./clickmes.JSON', function(clickmes) {
         const container = $('#clickme-cards-container');
         
         $.each(clickmes, function(index, clickme) {
