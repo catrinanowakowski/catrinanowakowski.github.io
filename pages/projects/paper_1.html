@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .bg {
+	  background-image: url('https://catrinanowakowski.github.io/photo_bg/IMG_9788.jpg'); /* Set the background image */
+    background-size: cover; /* Make the image cover the entire aside */
+	  background-position: center; /* Center the image within the aside */
+	  background-repeat: no-repeat; /* Prevent the image from repeating */
+	  padding: 0px;      /* Remove width or adjust as needed now that it's below section */
+    margin: 0px;
+    width: 100%; */
+    min-height: 300px;
+      /* Remove margin-left if aside is below section */
+      /* margin-left: 20px; */
+    }
+</style>
+
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+</head>
+<html>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+    <main>
+<div class="container-fluid"> 
+<div class = "row">
+<section class = "bg">
+<div class="container m-1"> <!-- Adds a margin around the whole container -->
+
+	<div class = "row">
+	<div class = "col-md-12">
+
+		<h1> Title: Warming overtakes stratification in driving abundance of copepods with contrasting life histories (Calanus finmarchicus and Centropages typicus) in the Gulf of Maine from 1977 to 2017
+		</h1>
+
+		<h2>Abstract</h2>
+		<p>Copepods are key conduits of energy in ocean food webs, transferring bottom-up biogeochemical cycling and productivity dynamics to upper trophic levels. The Gulf of Maine is a model system for studying relationships among copepod population dynamics, oceanographic conditions, and climate. Past studies have identified large temporal oscillations in copepod species abundance and community composition, aligned with organism size and associated with oscillations in the North Atlantic Oscillation. However, interpreting correlations between climate indices and plankton communities can be complex, as climate indices are the synthesis of multiple large-scale oceanographic phenomena. Our study tested hypotheses about interdecadal trends in, and environmental drivers of, Gulf of Maine copepod abundance, focusing on two species with different life histories and body size. Using a combination of Generalized Additive Models and Markov Switching Models, we identified four key transition periods in both Calanus finmarchicus and Centropages typicus abundance over the past 40 yrs, defined by the years 1986, 1997/2000 (C. finmarchicus/C. typicus), and 2006. The mixed layer depth had the most persistent relationship with copepod abundance from 1977 to the late 1990s in both species, and we hypothesize that hydrographic-nutrient-phytoplankton dynamics were the primary drivers of the changes in interannual copepod abundance. Temperature-related variables, including Gulf of Maine surface temperature and the Warm Slope Water fraction of bottom water, became the primary environmental correlates with abundance after 2006, particularly for C. finmarchicus. This shift indicated a departure from previous multi-decadal environmental drivers of interannual copepod community patterns in the Gulf of Maine. This change was unprecedented in the historical record (1977–2017), and models based on prior time frames (1977–2006) would have been unable to forecast this event. These data highlight the disruptive nature of rapid warming on long-established plankton community dynamics and emphasize the need to account for these nonstationary relationships when developing management tools and strategies in the Gulf of Maine, as well as other regions where rapid warming is expected.
+		</p>
+	</div>
+	</div>
+
+
+	<div class = "col-md-12">
+	<div class = "row">
+		<p>This paper features a methods figure that provides a detailed explanation on the statistical approach applied in the study. </p>
+			<div class="imgbox">
+	    		<img class="center-fit" src = "https://catrinanowakowski.github.io/photo_bg/methods_figure.JPG">
+	    </div>
+	</div>
+    </div>
+
+</div>
+</section>
+</div>
+</div>
+</main>
+    <div id="footer-placeholder"></div>
+    <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+  </body>
+</html>
+</html>
