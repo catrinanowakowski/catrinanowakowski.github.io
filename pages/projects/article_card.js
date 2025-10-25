@@ -1,7 +1,6 @@
 $(document).ready(function() {
     $.getJSON('https://catrinanowakowski.github.io/pages/projects/articles.JSON', function(articles) {
         const container = $('#article-cards-container');
-        
         $.each(articles, function(index, article) {
             const cardHtml = `
             <div class="col-md-4 mb-4"> <article class="all-browsers">

@@ -1,5 +1,13 @@
 [
     {
+        "title": "Recent Paper",
+        "subtitle": "Gulf of Maine Copepods.",
+        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/2022-02-08_5min_1_OSM2022.jpg" alt = "centropages",
+        "altText": "Title Slide example",
+        "description": "A paper that applies a novel approach to Gulf of Maine Zooplankton.",
+        "link": "https://catrinanowakowski.github.io/pages/projects/paper_1"
+    },
+    {
         "title": "The Transition",
         "subtitle": "The Transition: 1",
         "imageSrc": "https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg",
