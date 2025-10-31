@@ -1,5 +1,13 @@
 [
     {
+        "title": "Copepod Paper",
+        "subtitle": "Gulf of Maine Copepods.",
+        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/paper_1/methods_figure.jpg",
+        "altText": "Title Slide example",
+        "description": "A paper that applies a novel approach to Gulf of Maine Zooplankton.",
+        "link": "https://catrinanowakowski.github.io/pages/projects/paper_1"
+    },
+    {
         "title": "The Transition",
         "subtitle": "The Transition: 1",
         "imageSrc": "https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg",
@@ -10,7 +18,7 @@
     {
         "title": "How I built this",
         "subtitle": "Why I built this",
-        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/visathon/sculpture.jpg",
+        "imageSrc": "https://catrinanowakowski.github.io/photo_bg/sanddune.JPG",
         "altText": "Another Project Image",
         "description": "Building a website hasn't been just about digitalizing my CV, but this has been an interesting benefit.",
         "link": "https://catrinanowakowski.github.io/pages/programming/how_i_built"
