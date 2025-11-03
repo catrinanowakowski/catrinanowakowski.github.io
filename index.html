@@ -13,13 +13,13 @@
 
 		.s1_img {
 		  float: left; /* Float the image to the left */
-		    margin-right: 15px; /* Add some space to the right of the image */
+		    margin-right: 1px; /* Add some space to the right of the image */
 		    max-width: 450px; /* Limit image width (adjust as needed) */
 		    width: 100%; /* Maintain aspect ratio */
 		    height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
 		}
 	    .article_img {
-	      margin-right: 15px; /* Add some space to the right of the image */
+	      margin-right: 1px; /* Add some space to the right of the image */
 	      max-width: 450px; /* Limit image width (adjust as needed) */
 	      width: 30%; /* Maintain aspect ratio */
 	      height: auto; /*put back to auto, get rid of width to put back-- should try setting a max height... */
@@ -49,7 +49,7 @@
 	      background-repeat: no-repeat; /* Prevent the image from repeating */
 	      padding: 0px;
 	      min-height: 300px;
-	      margin: 2px;
+	      margin: 1px;
 	      width: 100%; /* Example width for sidebar */
 	      /*margin-left: 20px;  Space between main and aside */
 	      color: #fff; /* Example text color for readability against the image */
@@ -104,8 +104,14 @@ $.get("/fmt/nav.html", function(data){
 						<div class="container m-1"> <!-- Adds a margin around the whole container -->
 							<div class="row">
 								<div class="container mt-5">
-					    			<div class="row" id="clickme-cards-container">
-					        		</div>
+					    			<!div class="row" id="clickme-cards-container">
+					        		<!/div>
+					        		<a href="https://github.com/catrinanowakowski/catrinanowakowski.github.io">
+	           							<button class="btn btn-primary button1">Code for website</button>
+	        						</a>
+	        						<a href="https://github.com/catrinanowakowski/webpage_generator">
+	           							<button class="btn btn-primary button1">Code for website complier</button>
+	        						</a>
 								</div>
 							</div>
 						</div>
@@ -138,7 +144,7 @@ $.get("/fmt/nav.html", function(data){
 
 </div>
 
-<script src="./clickme_card.js"></script>
+<!script src="./clickme_card.js"><!/script>
 <script src="./article_card.js"></script>
 </main>
     <div id="footer-placeholder"></div>
