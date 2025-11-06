@@ -59,25 +59,14 @@ $.get("/fmt/nav.html", function(data){
 
 		 <p>In attempting to make an *ascetic* home page, I realized immediately, that I was not interested in copy and pasting the code for my navigation pane and footer for every static HTML file, and I needed a standardized way to do this. I found a solution that looks something like this: </p>
 
-		 <h5> 
-		 	Simplification of the build_page() function (10/05/2025)
+		 <h3>Simplification of the <a href="https://github.com/catrinanowakowski/webpage_generator/blob/main/functions_20250530.R">build_page()</a> function (10/05/2025) 
+		 </h3>
 
-		 	HTML
-		 		head (not the same as header)
-		 			title
-		 			script
-		 			bootstrap
-		 			style
-		 		head
+		<div class = "col-md-4">
+			<img src="https://catrinanowakowski.github.io/pages/programming/how_i_built/why_i_built_this.jpg", class="img-fluid custom-image">
+		</div>
+	
 
-		 		body
-		 			navigation
-		 			body
-		 			footer 
-		 		body
-		 	HTML
-
-		 </h5>
 		<p>
 			What if I want to add a new navigation option, or change the footer one day, and I don't want to re render each static page? 
 
@@ -87,29 +76,6 @@ $.get("/fmt/nav.html", function(data){
 		<p>
 			This means I only have to make a style file, and body file for each page. Then when I compile the final html file in R, they get sandwiched into the standard outline. 
 		</p>
-
-		<h5> 
-		 	Simplification of the build_page() function (10/05/2025)
-		 	Only style and body need to be created for each page
-
-		 	HTML
-		 		head (not the same as header)
-		 			title
-		 			script
-		 			bootstrap
-		 			style
-		 		head
-
-		 		body
-		 			navigation
-		 			body
-		 			footer 
-		 		body
-		 	HTML
-
-		 </h5>
-
-
 	</div>
 </div>
 
