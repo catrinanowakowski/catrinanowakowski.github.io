@@ -55,13 +55,11 @@ $.get("/fmt/nav.html", function(data){
 		 <p>With this project, I quickly realized that my goal is different from what I usually do. Normally, I construct an analysis or data visualization. Data goes in to a function and what comes out is  either slightly different data or a graphical component. For this project, I am designing a series of file paths for another human to navigate, and this map of connections needs to scale and grow as my needs and know how evolve. </p>
 
 		 <h3>To get started, I picked something overly complicated for my index page. </h3>
-		 <p>The home page of your website is your "Index.html" file. And I decided immediately that I needed a navigation pane, and two photos of the ocean that stretch across the full page that make two distinct sections. While, this lead to me breaking my page multiple times early on, it was useful to start with a challenging task (that I still haven't fully mastered), because it meant I had to overcome a few barriers early before I had fully committed to a design and  infrastructure. </p>
-
-		 <p>In attempting to make an *ascetic* home page, I realized immediately, that I was not interested in copy and pasting the code for my navigation pane and footer for every static HTML file, and I needed a standardized way to do this. I found a solution that looks something like this: </p>
+		 <p>The home page of your website is your "Index.html" file. And I decided immediately that I needed a navigation pane, and two photos of the ocean that stretch across the full page that make two distinct sections. While, this lead to me breaking my page multiple times early on, it was useful to start with a challenging task (that I still haven't fully mastered), because it meant I had to overcome a few barriers early before I had fully committed to a design and  infrastructure. In attempting to make an *ascetic* home page, I realized immediately, that I was not interested in copy and pasting the code for my navigation pane and footer for every static HTML file, and I needed a standardized way to do this. I found a solution that looks something like this: </p>
 
 	</div>
 	<div class = "row">
-	<div class = "col-md-6">
+	<div class = "col-md-4">
 			 <h5>Simplification of the <a href="https://github.com/catrinanowakowski/webpage_generator/blob/main/functions_20250530.R">build_page()</a> function (10/05/2025) 
 			 </h5>
 
@@ -69,7 +67,7 @@ $.get("/fmt/nav.html", function(data){
 				<img src="https://catrinanowakowski.github.io/pages/programming/how_i_built/why_i_buit_this.jpg", class="img-fluid custom-image">
 			</div>
 	</div>
-	<div class = "col-md-6">
+	<div class = "col-md-8">
 		<p>What if I want to add a new navigation option, or change the footer one day, and I don't want to re render each static page? I save a nav.html file, and a footer.html file, and use "//code.jquery.com/jquery.min.js" to call the same file each time the page is rendered in your browser. This means, every time any page is loaded, it is getting the navigation and footer information from the same source. This means I only have to make a style file, and body file for each page. Then when I compile the final html file in R, they get sandwiched into the standard outline. 
 		</p>
 	</div>
