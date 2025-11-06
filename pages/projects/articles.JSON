@@ -1,9 +1,9 @@
 [
     {
-        "title": "Recent Paper",
+        "title": "Copepod Paper",
         "subtitle": "Gulf of Maine Copepods.",
-        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/talk_title_slides/2022-02-08_5min_1_OSM2022.jpg",
-        "altText": "Title Slide example",
+        "imageSrc": "https://catrinanowakowski.github.io/pages/projects/paper_1/methods_figure.jpg",
+        "altText": "Methods figure",
         "description": "A paper that applies a novel approach to Gulf of Maine Zooplankton.",
         "link": "https://catrinanowakowski.github.io/pages/projects/paper_1"
     },
