@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <title>Project: Build a webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .bg {
+	  background-image: url('https://catrinanowakowski.github.io/photo_bg/IMG_9788.jpg'); /* Set the background image */
+    background-size: cover; /* Make the image cover the entire aside */
+	  background-position: center; /* Center the image within the aside */
+	  background-repeat: no-repeat; /* Prevent the image from repeating */
+	  padding: 0px;      /* Remove width or adjust as needed now that it's below section */
+    margin: 0px;
+    width: 100%; */
+    min-height: 300px;
+      /* Remove margin-left if aside is below section */
+      /* margin-left: 20px; */
+    }
+
+  .imgbox {
+      display: grid;
+      height: 50%;
+      margin: 0;
+      padding: 0;
+  }
+  .center-fit {
+      max-width: 100%;
+      max-height: 100vh;
+      margin: auto;
+  }
+</style>
+
+  <div id="style-placeholder"></div>
+  <script>
+$.get("/fmt/style.html", function(data){
+ $("#style-placeholder").replaceWith(data); 
+});
+</script>
+</head>
+<html>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+$.get("/fmt/nav.html", function(data){
+ $("#nav-placeholder").replaceWith(data); 
+});
+</script>
+    <article>
+<div class="container m-3"> <!-- Adds a margin around the whole container -->
+<div class = "row">
+<div class = "col-md-12">
+	
+	<h2> Some tips for getting started with your website </h2>
+	<h3>Sizing things </h3>
+		 <p>I first started trying to scale everything DIY, that is hard, and while it was good for me getting to know HTML syntax, it is not what I currently do now. <a href="https://doi.org/10.1016/j.pocean.2025.103538">Bootstrap</a> does a lot of the work for you, and it auto accounts for different screen types and sizes as well.
+		 </p>
+
+	<h3>Rendering pages locally</h3>
+		<p>Rendering pages locally before pushing them to github saves a lot of time. For my work flow, I am using the sublime text editor and pushing my files to github using "Github Desktop". To locally render a page on my website, I navigate to the folder I have the index.html file saved to, right click, and open "Git Bash Here". From there you I python to launch a local server: "py -m http.server". Now I open up an Internet browser and navigate to "http://localhost:8000/index.html". If you want to load a file with in a subfolder it would look like this: "http://localhost:8000/pages/projects/projects_main.html" assuming the "pages" folder is in the same location as your index.html file. 
+		</p>
+
+</div>
+</div>
+</div>
+</article>>
+
+
+
+    <div id="footer-placeholder"></div>
+    <script>
+$.get("/fmt/footer.html", function(data){
+ $("#footer-placeholder").replaceWith(data); 
+});
+</script>
+  </body>
+</html>
+</html>
